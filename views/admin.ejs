@@ -1,0 +1,124 @@
+<body class="bg1">
+    <nav class="navbar">
+        <div class="col-2">
+        </div>
+        <div class="col-8 text-center">
+            <h5>Dashboard Admin</h5>
+        </div>
+        <div class="col-2 d-flex flex-row-reverse">
+            <div class="dropdown">
+                <div data-toggle="dropdown">
+                    <img src="/picture/<%= image %> " alt="Foto Siswa" class="rounded-circle menu_icon_container">
+                    <div class="dropdown-menu dropdown-menu-right p-0">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title m-0">
+                                    <%= nama %>
+                                </h5>
+                                <p class="card-text">Admin</p>
+                            </div>
+                        </div>
+                        <a class="dropdown-item text-center" onclick="location.href='/logout'">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid justify-content-center my-3">
+        <div class="row">
+            <div class="col-lg-2 col-md-12 my-1">
+                <div class="card_dash">
+                    <div class="rounded-circle d-flex col-12 container-fluid justify-content-center
+                        align-items-center">
+                        <img src="/picture/<%= image %> " alt="Foto Siswa" class="rounded-circle mt-4 user_icon_container">
+                    </div>
+                    <br>
+                    <h6 class="d-flex justify-content-center login_container">
+                        Profile
+                    </h6>
+                    <h5 class="d-flex text-center justify-content-center login_container">
+                        <%= nama %>
+                    </h5>
+                    <form method="POST" action="/admin/<%= username %> ">
+                        <div class="col-12 pt-4 mt-5 d-flex text-center justify-content-center">
+                            <h4><b>Sort by : </b></h4>
+                        </div>
+                        <div class="col-12">
+                            <div class="container">
+                                <div class="input-group">
+                                    <div class="col-12 my-2">
+                                        <select name="kelas" id="kelas" class="custom-select">
+                                        <option value="" selected>Kelas</option>
+                                    </select>
+                                    </div>
+                                    <div class="col-12 my-2">
+                                        <select name="jurusan" id="jurusan" class="custom-select" value="" disabled>
+                                        <option value="" selected>Jurusan</option>
+                                    </select>
+                                    </div>
+                                    <div class="col-12 my-2">
+                                        <select name="index" id="index" class="custom-select" value="" disabled>
+                                        <option value="" selected>Index</option>
+                                    </select>
+                                    </div>
+                                    <div class="col-12 my-2 align-middle">
+                                        <button type="submit" class="btnedit align-middle">Filter</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-10 col-md-12 my-1">
+                <div class="card_dash container-fluid justify-content-center
+                        align-items-center">
+                    <div class="col-12 py-2">
+                        <div class="container mb-3 mt-3">
+                            <table id="tably" cellspacing="0" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th class="table-sm text-center align-middle">Absen
+                                        </th>
+                                        <th class="table-sm text-center align-middle">Nama
+                                        </th>
+                                        <th class="table-sm text-center align-middle">Kelas
+                                        </th>
+                                        <th class="table-sm text-center align-middle">Poin
+                                        </th>
+                                        <th class="table-sm text-center align-middle">Aksi
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% records.forEach((admin)=>{%>
+
+                                        <tr>
+                                            <td class="table-sm text-center align-middle">
+                                                <%= admin.absen %>
+                                            </td>
+                                            <td class="align-middle">
+                                                <%= admin.name %>
+                                            </td>
+                                            <td class="table-sm text-center align-middle">
+                                                <%= admin.kelas %>
+                                                    <%- admin.jurusan %>
+                                                        <%- admin.index %>
+                                            </td>
+                                            <td class="table-sm text-center align-middle">
+                                                <%= admin.point %>
+                                            </td>
+                                            <td class="table-sm text-center align-middle"><button type="button" onclick="location.href='/admin/<%= username %>/<%= admin._id %>'" class="btnedit">Add Point</button></td>
+                                        </tr>
+                                        <% }); %>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>

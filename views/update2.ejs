@@ -1,0 +1,43 @@
+<%- include('./partials/messages') %>
+
+    <body class="bg">
+        <div class="container d-flex align-items-center justify-content-center" style="height: 100vh">
+            <div class="user_card">
+                <div class="container d-flex justify-content-center form_container mt-0">
+                    <form method="POST" action="/profileUpdate" autocomplete="off" enctype="multipart/form-data">
+                        <div class="container d-flex justify-content-center">
+                            <div id="profile-container">
+                                <image id="profileImage" src="<%= user.image %> " />
+                            </div>
+                            <input id="imageUpload" type="file" name="photo" placeholder="Photo" capture>
+                        </div>
+                        <div class="d-flex justify-content-center mb-3">
+                            <h2>
+                                <%= title %>
+                            </h2>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-append">
+                                <span class="input-group-text"> <img src="/picture/128/USER_2_.png" class="iclg img-fluid"
+                                    alt="Icon">
+                            </span>
+                            </div>
+                            <input type="text" name="username" class="form-control input_user" value="<%=user.username%>" disabled>
+                            <input type="text" name="_id" class="form-control input_user" value='<%=_id%>' hidden>
+                        </div>
+                        <div class="input-group mb-2">
+                            <div class="input-group-append">
+                                <span class="input-group-text"><img src="/picture/128/UNLOCK_1_.png" class="iclg img-fluid"
+                                    alt="Icon"></span>
+                            </div>
+                            <input type="text" name="kelas" class="form-control input_pass" value="<%= user.kelas %> <%= user.jurusan %> <%= user.index %> " placeholder="Kelas" disabled>
+                        </div>
+
+                        <div class="d-flex justify-content-center mt-3 login_container">
+                            <button type="submit" name="button" class="btn login_btn"><%= title %></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>

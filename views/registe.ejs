@@ -1,0 +1,94 @@
+<%- include('./partials/messages') %>
+
+<form action="/register" method="POST" autocomplete="off">
+    <div class="form-group">
+      <label for="name">Nama</label>
+      <input
+        type="name"
+        id="name"
+        name="name"
+        placeholder="Masukan Nama"
+        value="<%= typeof nama != 'undefined' ? nama : '' %>"
+      />
+    </div>
+    <div class="form-group">
+      <label for="jeniskelamin">Jenis Kelamin</label>
+      <select name="jeniskelamin" id="jeniskelamin">
+        <option value="">Jenis Kelamin</option>
+        <option value="Laki-laki">Laki-laki</option>
+        <option value="Perempuan">Perempuan</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="kelas">Kelas</label>
+      <select name="kelas" id="kelas">
+        <option value="">Kelas</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+      </select>
+
+      <select name="jurusan" id="jurusan">
+        <option value="">Jurusan</option>
+        <option value="KGSP">KGSP</option>
+        <option value="KJIJ">KJIJ</option>
+        <option value="TTL">TTL</option>
+        <option value="TEDK">TEDK</option>
+        <option value="TME">TME</option>
+        <option value="TLFM">TLFM</option>
+        <option value="TMPO">TMPO</option>
+        <option value="SIJA">SIJA</option>
+      </select>
+      <select name="index" id="index">
+        <option value="">Index</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="absen">Absen</label>
+      <input
+        type="number"
+        id="absen"
+        name="absen"
+        placeholder="Masukan Nomor Absen"
+        value="<%= typeof absen != 'undefined' ? absen : '' %>"
+      />
+    </div>
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Masukan Username"
+        value="<%= typeof username != 'undefined' ? username : '' %>"
+      />
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Masukan Password"
+        value="<%= typeof password != 'undefined' ? password : '' %>"
+      />
+    </div>
+    <div class="form-group">
+      <label for="password2">Confirm Password</label>
+      <input
+        type="password"
+        id="password2"
+        name="password2"
+        placeholder="Konfirmasi Password"
+        value="<%= typeof password2 != 'undefined' ? password2 : '' %>"
+      />
+    </div>
+    <button type="submit">
+      Register
+    </button>
+  </form>
+  <p>Have An Account? <a href="/login">Login</a></p>

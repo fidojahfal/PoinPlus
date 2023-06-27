@@ -1,0 +1,310 @@
+.bg {
+    background: linear-gradient(to right, #5d00a9, #8a6fd8) !important;
+}
+
+.bg1 {
+    background: linear-gradient(#5d00a9, #feb100) !important;
+}
+
+.bg404 {
+    background-image: url(https://media.giphy.com/media/9J7tdYltWyXIY/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 97.5vh;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* image upload on edit start */
+
+#imageUpload {
+    display: none;
+}
+
+#profileImage {
+    cursor: pointer;
+}
+
+#profile-container {
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    margin-top: -150px;
+}
+
+#profile-container img {
+    width: 130px;
+    height: 130px;
+}
+
+
+/* image upload on edit end */
+
+.lol {
+    color: #feb100;
+}
+
+.lolo {
+    color: #ffffff;
+}
+
+.card {
+    background-color: #461e5d;
+    border-radius: 0mm;
+}
+
+.card-title {
+    color: #feb100;
+}
+
+.card-text {
+    color: #feb100;
+}
+
+.dropdown-item:hover {
+    color: #feb100;
+    background-color: #713792;
+}
+
+.dropdown-item {
+    background-color: #feb100;
+    color: #ffffff;
+}
+
+.navbar {
+    color: #feb100;
+    background: #461e5d;
+}
+
+.card_dash {
+    background: #461e5d;
+    min-height: 533px;
+    min-width: auto;
+    color: #feb100;
+}
+
+.card_dasha {
+    background: #461e5d;
+    min-height: 533px;
+    color: #feb100;
+}
+
+.card_dashc {
+    background: #713792;
+    height: 353px;
+    color: #feb100;
+}
+
+.user_card {
+    height: 400px;
+    width: 350px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: #461e5d;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #ffffff;
+    border-radius: 5%;
+}
+
+.user_cards {
+    min-height: 464px;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: #461e5d;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #ffffff;
+    border-radius: 1%;
+}
+
+.poin_card {
+    height: 430px;
+    width: 430px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: #461e5d;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #ffffff;
+    border-radius: 5%;
+}
+
+.number_card {
+    height: 50px;
+    width: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #feb100;
+    border-radius: 5%;
+}
+
+.user_cardr {
+    height: 465px;
+    width: 440px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: #461e5d;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #ffffff;
+    border-radius: 5%;
+}
+
+.brand_logo_container {
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    top: -75px;
+    border-radius: 50%;
+    background: #ffffff !important;
+    padding: 20px;
+    text-align: center;
+}
+
+.user_icon_container {
+    height: 111px;
+    width: 111px;
+    background: #feb100 !important;
+    border-radius: 50%;
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+
+.menu_icon_container {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.iclg {
+    height: 15px;
+    width: 15px;
+}
+
+.form_container {
+    margin-top: 50px;
+}
+
+.login_btn {
+    width: 90%;
+    background: #feb100 !important;
+    color: white !important;
+}
+
+.login_btn:focus {
+    outline: 0px !important;
+}
+
+.login_container {
+    padding: 0 2rem;
+}
+
+.input-group-text {
+    background: #feb100 !important;
+    border: 0 !important;
+}
+
+.form-control {
+    border: 0 !important;
+}
+
+.form-control-number {
+    border: 0 !important;
+    height: 100px;
+    width: 250px;
+    border-radius: 5%;
+}
+
+.input_number:focus {
+    outline: 0px !important;
+    border: 3px solid #feb100 !important;
+    color: white !important;
+    background: #feb100 !important;
+}
+
+.input_user:focus,
+.input_pass:focus {
+    outline: 0px !important;
+    border: 3px solid #feb100 !important;
+    box-shadow: none !important;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #feb100 !important;
+}
+
+.custom-select:focus {
+    position: relative;
+    outline: 0px !important;
+    border: 3px solid #feb100;
+}
+
+.pagination .page-item.active .page-link {
+    color: #fff !important;
+    background-color: #feb100 !important;
+}
+
+.pagination .page-item .page-link {
+    color: #feb100 !important;
+}
+
+#tably {
+    border-collapse: collapse;
+}
+
+#tably td,
+#tably th {
+    border: 1px solid #461e5d;
+    padding: 8px;
+    background-color: #f2f2f2;
+}
+
+#tably tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#tably tr:hover {
+    background-color: #ddd;
+}
+
+#tably th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #feb100;
+    color: white;
+}
+
+.btnedit {
+    background-color: #feb100;
+    border: none;
+    color: white !important;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+}

@@ -1,0 +1,106 @@
+<body class="bg1">
+    <nav class="navbar">
+        <div class="col-2">
+        </div>
+        <div class="col-8 text-center">
+            <h5>Dashboard Siswa</h5>
+        </div>
+        <div class="col-2 d-flex flex-row-reverse">
+            <div class="dropdown">
+                <div data-toggle="dropdown">
+                    <img src="<%= image %> " alt="Foto Siswa" class="rounded-circle menu_icon_container">
+                    <div class="dropdown-menu dropdown-menu-right p-0">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title m-0">
+                                    <%= name %>
+                                </h5>
+                                <p class="card-text">Siswa</p>
+                                <input type="button" class="dropdown-item text-center" onclick="location.href='/logout'" value="Logout" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid justify-content-center my-3">
+        <div class="row">
+            <div class="col-lg-2 col-md-12 my-1">
+                <div class="card_dash">
+                    <div class="col-12 pt-3 text-center bold">
+                        <h4>Poin Anda <br> Saat Ini</h4>
+                    </div>
+                    <br>
+                    <div class="rounded-circle user_icon_container col-12 container-fluid justify-content-center
+                        align-items-center">
+                        <h3 class="display-4 my-3 font-weight-bold">
+                            <%= poin %>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-10 col-md-12 my-1">
+                <div class="card_dash container-fluid justify-content-center
+                        align-items-center">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-12 d-flex align-items-center justify-content-center">
+                                <a href="/user/<%= username %>/update/<%= _id %>"><img src="<%= image %> " alt="Foto Siswa"
+                                    class="rounded-circle my-3 user_icon_container"></a>
+                            </div>
+                            <div class="col-lg-10 col-md-12  my-4">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="row">
+                                            <div class="col-4 p-0">
+                                                <h5><b>Nama</b></h5>
+                                            </div>
+                                            <div class="col-8 p-0">
+                                                <h5><b>: <%= name %></b></h5>
+                                            </div>
+                                            <div class="col-4 p-0">
+                                                <h5><b>Jurusan</b></h5>
+                                            </div>
+                                            <div class="col-8 p-0">
+                                                <h5><b>: <%= jurusan %> <%= index %></b></h5>
+                                            </div>
+                                            <div class="col-4 p-0">
+                                                <h5><b>Jenis Kelamin</b></h5>
+                                            </div>
+                                            <div class="col-8 p-0">
+                                                <h5><b>: <%= jeniskelamin %> </b></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="row">
+                                            <div class="col-4 p-0">
+                                                <h5><b>Kelas</b></h5>
+                                            </div>
+                                            <div class="col-8 p-0">
+                                                <h5><b>: <%= kelas %></b></h5>
+                                            </div>
+                                            <div class="col-4 p-0">
+                                                <h5><b>Nomer Urut</b></h5>
+                                            </div>
+                                            <div class="col-8 p-0">
+                                                <h5><b>: <%= absen%></b></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 py-2">
+                        <div class="container card_dashc">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,98 @@
+<body class="bg lolo">
+    <div class="container">
+        <!--left col-->
+        <form class="form" action="/profileUpdate" method="post" id="registrationForm" enctype="multipart/form-data">
+            <div class="row mt-3">
+                <div class="col-lg-3 col-md-12 text-center mt-3">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-6">
+                            <div class="container ml-4">
+                                <div class="view overlay flex-center rounded-circle avatar img-circle img-thumbnail" style="height: 192px; width: 192px;" id="profileImage">
+                                    <img src="<%= user.image %> " class="rounded-circle avatar img-circle" style="height: 192px; width: 192px;" alt="avatar">
+                                    <div class="mask flex-center rgba-orange-strong">
+                                        <h1 class="lolo"><b>Change Image</b></h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-6 align-self-center">
+
+                            <h1 class="lol">
+                                <%= user.username %>
+                            </h1>
+                        </div>
+                        <div class="container">
+                            <input type="file" name="photo" id="imageUpload" class="text-center center-block file-upload" capture>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <!--/col-3-->
+                <div class="col-lg-9 col-md-12 lol">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="home">
+                            <hr>
+                            <div class="row">
+                                <div class="col-12 mb-1">
+                                    <label for="Nama">
+                                        <h4>Name</h4>
+                                    </label>
+                                    <input type="text" class="form-control input_user" name="name" id="first_name" placeholder="Name" value="<%= user.name %>" disabled>
+                                    <input type="text" name="_id" class="form-control input_user" value="" hidden>
+                                </div>
+                                <div class="col-12 mb-1">
+                                    <label for="kelas">
+                                        <h4>Kelas</h4>
+                                    </label>
+                                    <div class="input-group-append">
+                                        <input type="text" class="form-control input_user" name="kelas" placeholder="Kelas" value="" disabled>
+                                        <input type="text" class="form-control input_user" name="jurusan" placeholder="Jurusan" value="" disabled>
+                                        <input type="text" class="form-control input_user" name="index" placeholder="Index" value="" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-1">
+                                    <label for="Jenis Kelamin">
+                                        <h4>Jenis Kelamin</h4>
+                                    </label>
+                                    <input type="text" class="form-control input_user" name="jeniskelamin" placeholder="Kelas" value="" disabled>
+                                </div>
+                                <div class="col-6 mb-1">
+                                    <label for="urut">
+                                        <h4>No. Urut</h4>
+                                    </label>
+                                    <input type="text" class="form-control input_user" name="absen" id="urut" placeholder="No. Urut" value="" disabled>
+                                </div>
+                                <div class="col-12 mb-1">
+                                    <label for="username">
+                                        <h4>Username</h4>
+                                    </label>
+                                    <input type="username" class="form-control input_user" name="username" id="username" placeholder="username" title="Input your new username if you want change your username">
+                                </div>
+                                <div class="col-6">
+                                    <label for="password">
+                                        <h4>Password</h4>
+                                    </label>
+                                    <input type="password" class="form-control input_user" name="password" id="password" placeholder="password" title="Input your new password if you want change your password">
+                                </div>
+                                <div class="col-6">
+                                    <label for="password2">
+                                        <h4>Verify Password</h4>
+                                    </label>
+                                    <input type="password" class="form-control input_user" name="password2" id="password2" placeholder="Verify" title="Enter your new password again">
+                                </div>
+                                <div class="col-12">
+                                    <br>
+                                    <button class="btn btn-lg btnedit" name="button" type="submit">Save</button>
+                                    <button class="btn btn-lg btnedit" type="reset"><i
+                                            class="glyphicon glyphicon-repeat"></i>
+                                        Reset</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <hr>
+    </div>
+</body>>
